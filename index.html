@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling App - Ramesh R</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>🗳️ Online Polling App</h1>
+    </header>
+
+    <main class="container">
+        <!-- Create Poll -->
+        <section class="form-section">
+            <h2>Create a Poll</h2>
+            <form id="pollForm">
+                <input type="text" id="question" placeholder="Poll Question" required>
+                <input type="text" id="option" placeholder="Poll Option">
+                <button type="button" id="addOption" class="btn-secondary">+ Add Option</button>
+                <div id="optionsList"></div>
+                <button type="submit" class="btn-primary">Create Poll</button>
+            </form>
+        </section>
+
+        <!-- Vote Section -->
+        <section class="vote-section">
+            <h2 id="pollQuestion">No poll created yet</h2>
+            <ul id="voteOptions"></ul>
+        </section>
+
+        <!-- Results -->
+        <section class="result-section">
+            <h2>Results</h2>
+            <canvas id="resultsChart"></canvas>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
